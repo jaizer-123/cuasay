@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Item - Lost & Found System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Lost & Found</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lost-items.html">Lost Items</a></li>
+                <li><a href="found-items.html">Found Items</a></li>
+                <li><a href="report-item.html" class="active">Report Item</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Report an Item</h1>
+        <p>Help us help you find your lost items or return found items to their owners</p>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <form class="report-form">
+            <!-- Report Type -->
+            <div class="form-group">
+                <label>Report Type *</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="lost" name="reportType" value="lost" checked>
+                        <label for="lost">I Lost Something</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="found" name="reportType" value="found">
+                        <label for="found">I Found Something</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item Name -->
+            <div class="form-group">
+                <label for="itemName">Item Name *</label>
+                <input type="text" id="itemName" name="itemName" placeholder="e.g., Black Leather Wallet" required>
+            </div>
+
+            <!-- Category -->
+            <div class="form-group">
+                <label for="category">Category *</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="accessories">Accessories (Bags, Wallets, Jewelry)</option>
+                    <option value="documents">Documents (ID, Cards, Papers)</option>
+                    <option value="clothing">Clothing & Footwear</option>
+                    <option value="keys">Keys</option>
+                    <option value="books">Books & Stationery</option>
+                    <option value="sports">Sports Equipment</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Description -->
+            <div class="form-group">
+                <label for="description">Detailed Description *</label>
+                <textarea id="description" name="description" rows="4" placeholder="Provide a detailed description including color, brand, distinctive features, etc." required></textarea>
+            </div>
+
+            <!-- Location -->
+            <div class="form-group">
+                <label for="location">Location *</label>
+                <select id="location" name="location" required>
+                    <option value="">Select a location</option>
+                    <option value="library">Library</option>
+                    <option value="cafeteria">Cafeteria</option>
+                    <option value="parking-a">Parking Lot A</option>
+                    <option value="parking-b">Parking Lot B</option>
+                    <option value="parking-c">Parking Lot C</option>
+                    <option value="classroom">Classroom</option>
+                    <option value="gym">Gym</option>
+                    <option value="auditorium">Auditorium</option>
+                    <option value="lab">Computer Lab</option>
+                    <option value="hallway">Hallway</option>
+                    <option value="reception">Reception/Main Entrance</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Specific Location Details -->
+            <div class="form-group">
+                <label for="specificLocation">Specific Location Details</label>
+                <input type="text" id="specificLocation" name="specificLocation" placeholder="e.g., 3rd floor, near the water fountain">
+            </div>
+
+            <!-- Date -->
+            <div class="form-group">
+                <label for="date">Date Lost/Found *</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <!-- Time -->
+            <div class="form-group">
+                <label for="time">Approximate Time</label>
+                <input type="time" id="time" name="time">
+            </div>
+
+            <!-- Your Name -->
+            <div class="form-group">
+                <label for="yourName">Your Name *</label>
+                <input type="text" id="yourName" name="yourName" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" required>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-group">
+                <label for="additionalInfo">Additional Information</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="Any other details that might help identify the item or facilitate its return"></textarea>
+            </div>
+
+            <!-- Photo Upload -->
+            <div class="form-group">
+                <label for="photo">Upload Photo (Optional)</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+
+            <!-- Terms and Conditions -->
+            <div class="form-group">
+                <div class="radio-option">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions and privacy policy *</label>
+                </div>
+            </div>
+
+            <!-- Form Actions -->
+            <div class="form-actions">
+                <a href="index.html" class="btn btn-cancel">Cancel</a>
+                <button type="submit" class="btn btn-primary">Submit Report</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="how-it-works" style="padding-top: 40px;">
+        <div class="container">
+            <h2 class="section-title">Tips for Reporting</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Be Specific</h3>
+                    <p>Include detailed descriptions, brand names, colors, and unique features to help identify your item.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Add Photos</h3>
+                    <p>A picture is worth a thousand words. Upload clear photos of the item if available.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Check Regularly</h3>
+                    <p>Keep checking our listings as new items are reported daily. You might find a match!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Lost & Found System. All rights reserved.</p>
+            <p>Helping reunite people with their belongings since 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

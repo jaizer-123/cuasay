@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Items - Lost & Found System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Lost & Found</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lost-items.html" class="active">Lost Items</a></li>
+                <li><a href="found-items.html">Found Items</a></li>
+                <li><a href="report-item.html">Report Item</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Lost Items</h1>
+        <p>Browse items that people are looking for</p>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filters">
+            <div class="filter-group">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="documents">Documents</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="keys">Keys</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="location">Location</label>
+                <select id="location">
+                    <option value="">All Locations</option>
+                    <option value="library">Library</option>
+                    <option value="cafeteria">Cafeteria</option>
+                    <option value="parking">Parking Lot</option>
+                    <option value="classroom">Classroom</option>
+                    <option value="gym">Gym</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="date">Date Range</label>
+                <input type="date" id="date">
+            </div>
+            <div class="filter-group">
+                <label for="search">Search</label>
+                <input type="text" id="search" placeholder="Search items...">
+            </div>
+        </div>
+    </section>
+
+    <!-- Items List Section -->
+    <section class="items-list-section">
+        <div class="container">
+            <div class="items-grid">
+                <!-- Lost Item 1 -->
+                <div class="item-card">
+                    <div class="item-image lost-badge">
+                        <span class="badge">Lost</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Black Leather Wallet</h3>
+                        <p class="item-location">Library - 3rd Floor</p>
+                        <p class="item-date">December 5, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Contains ID cards and credit cards. Brown leather with brass zipper.</p>
+                        <a href="#" class="btn btn-small">Contact Owner</a>
+                    </div>
+                </div>
+
+                <!-- Lost Item 2 -->
+                <div class="item-card">
+                    <div class="item-image lost-badge">
+                        <span class="badge">Lost</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Silver iPhone 13</h3>
+                        <p class="item-location">Parking Lot B</p>
+                        <p class="item-date">December 3, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Silver iPhone 13 with cracked screen protector. Has a blue case.</p>
+                        <a href="#" class="btn btn-small">Contact Owner</a>
+                    </div>
+                </div>
+
+                <!-- Lost Item 3 -->
+                <div class="item-card">
+                    <div class="item-image lost-badge">
+                        <span class="badge">Lost</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Red Sports Water Bottle</h3>
+                        <p class="item-location">Gym - Locker Room</p>
+                        <p class="item-date">December 4, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Red stainless steel water bottle with university logo sticker.</p>
+                        <a href="#" class="btn btn-small">Contact Owner</a>
+                    </div>
+                </div>
+
+                <!-- Lost Item 4 -->
+                <div class="item-card">
+                    <div class="item-image lost-badge">
+                        <span class="badge">Lost</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Gold Wedding Ring</h3>
+                        <p class="item-location">Cafeteria</p>
+                        <p class="item-date">December 1, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">18k gold wedding band with engraving inside. Very sentimental value.</p>
+                        <a href="#" class="btn btn-small">Contact Owner</a>
+                    </div>
+                </div>
+
+                <!-- Lost Item 5 -->
+                <div class="item-card">
+                    <div class="item-image lost-badge">
+                        <span class="badge">Lost</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Laptop Charger - Dell</h3>
+                        <p class="item-location">Computer Lab - Room 205</p>
+                        <p class="item-date">November 30, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Dell laptop charger, 65W, black cable with power brick.</p>
+                        <a href="#" class="btn btn-small">Contact Owner</a>
+                    </div>
+                </div>
+
+                <!-- Lost Item 6 -->
+                <div class="item-card">
+                    <div class="item-image lost-badge">
+                        <span class="badge">Lost</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Blue Denim Jacket</h3>
+                        <p class="item-location">Auditorium</p>
+                        <p class="item-date">November 29, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Light blue denim jacket, size M, with embroidered patch on back.</p>
+                        <a href="#" class="btn btn-small">Contact Owner</a>
+                    </div>
+                </div>
+
+                <!-- Lost Item 7 -->
+                <div class="item-card">
+                    <div class="item-image lost-badge">
+                        <span class="badge">Lost</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Student ID Card</h3>
+                        <p class="item-location">Main Building - 2nd Floor</p>
+                        <p class="item-date">November 28, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">University student ID card. Needed urgently for exams.</p>
+                        <a href="#" class="btn btn-small">Contact Owner</a>
+                    </div>
+                </div>
+
+                <!-- Lost Item 8 -->
+                <div class="item-card">
+                    <div class="item-image lost-badge">
+                        <span class="badge">Lost</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Prescription Glasses</h3>
+                        <p class="item-location">Reading Room</p>
+                        <p class="item-date">November 27, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Black frame prescription glasses in brown leather case.</p>
+                        <a href="#" class="btn btn-small">Contact Owner</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Lost & Found System. All rights reserved.</p>
+            <p>Helping reunite people with their belongings since 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

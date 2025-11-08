@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found Items - Lost & Found System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Lost & Found</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lost-items.html">Lost Items</a></li>
+                <li><a href="found-items.html" class="active">Found Items</a></li>
+                <li><a href="report-item.html">Report Item</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Found Items</h1>
+        <p>Browse items that have been found and are waiting to be claimed</p>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filters">
+            <div class="filter-group">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="documents">Documents</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="keys">Keys</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="location">Location</label>
+                <select id="location">
+                    <option value="">All Locations</option>
+                    <option value="library">Library</option>
+                    <option value="cafeteria">Cafeteria</option>
+                    <option value="parking">Parking Lot</option>
+                    <option value="classroom">Classroom</option>
+                    <option value="gym">Gym</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="date">Date Range</label>
+                <input type="date" id="date">
+            </div>
+            <div class="filter-group">
+                <label for="search">Search</label>
+                <input type="text" id="search" placeholder="Search items...">
+            </div>
+        </div>
+    </section>
+
+    <!-- Items List Section -->
+    <section class="items-list-section">
+        <div class="container">
+            <div class="items-grid">
+                <!-- Found Item 1 -->
+                <div class="item-card">
+                    <div class="item-image found-badge">
+                        <span class="badge found">Found</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Blue Backpack</h3>
+                        <p class="item-location">Cafeteria</p>
+                        <p class="item-date">December 4, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Navy blue backpack with laptop compartment. Contains textbooks.</p>
+                        <a href="#" class="btn btn-small">Claim Item</a>
+                    </div>
+                </div>
+
+                <!-- Found Item 2 -->
+                <div class="item-card">
+                    <div class="item-image found-badge">
+                        <span class="badge found">Found</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>House Keys with Keychain</h3>
+                        <p class="item-location">Main Entrance</p>
+                        <p class="item-date">December 2, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Set of 3 keys on a red keychain with car key fob.</p>
+                        <a href="#" class="btn btn-small">Claim Item</a>
+                    </div>
+                </div>
+
+                <!-- Found Item 3 -->
+                <div class="item-card">
+                    <div class="item-image found-badge">
+                        <span class="badge found">Found</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Wireless Earbuds - AirPods</h3>
+                        <p class="item-location">Study Hall</p>
+                        <p class="item-date">December 5, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Apple AirPods Pro in white charging case. Found on table.</p>
+                        <a href="#" class="btn btn-small">Claim Item</a>
+                    </div>
+                </div>
+
+                <!-- Found Item 4 -->
+                <div class="item-card">
+                    <div class="item-image found-badge">
+                        <span class="badge found">Found</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Brown Leather Purse</h3>
+                        <p class="item-location">Parking Lot C</p>
+                        <p class="item-date">November 30, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Small brown leather crossbody purse. Contains personal items.</p>
+                        <a href="#" class="btn btn-small">Claim Item</a>
+                    </div>
+                </div>
+
+                <!-- Found Item 5 -->
+                <div class="item-card">
+                    <div class="item-image found-badge">
+                        <span class="badge found">Found</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Black Umbrella</h3>
+                        <p class="item-location">Lecture Hall A</p>
+                        <p class="item-date">December 3, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Large black umbrella with wooden handle. Left after class.</p>
+                        <a href="#" class="btn btn-small">Claim Item</a>
+                    </div>
+                </div>
+
+                <!-- Found Item 6 -->
+                <div class="item-card">
+                    <div class="item-image found-badge">
+                        <span class="badge found">Found</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Samsung Galaxy Phone</h3>
+                        <p class="item-location">Bus Stop</p>
+                        <p class="item-date">November 28, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Black Samsung Galaxy S21 with purple case. Found near bench.</p>
+                        <a href="#" class="btn btn-small">Claim Item</a>
+                    </div>
+                </div>
+
+                <!-- Found Item 7 -->
+                <div class="item-card">
+                    <div class="item-image found-badge">
+                        <span class="badge found">Found</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Math Textbook</h3>
+                        <p class="item-location">Library - Study Area</p>
+                        <p class="item-date">December 1, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Calculus textbook with name written inside cover. Contact to verify.</p>
+                        <a href="#" class="btn btn-small">Claim Item</a>
+                    </div>
+                </div>
+
+                <!-- Found Item 8 -->
+                <div class="item-card">
+                    <div class="item-image found-badge">
+                        <span class="badge found">Found</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Silver Watch</h3>
+                        <p class="item-location">Gym - Locker Area</p>
+                        <p class="item-date">November 29, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Men's silver watch with black leather strap. Found near lockers.</p>
+                        <a href="#" class="btn btn-small">Claim Item</a>
+                    </div>
+                </div>
+
+                <!-- Found Item 9 -->
+                <div class="item-card">
+                    <div class="item-image found-badge">
+                        <span class="badge found">Found</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Green Notebook</h3>
+                        <p class="item-location">Classroom 301</p>
+                        <p class="item-date">December 4, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Green spiral notebook with class notes. May contain identifying info.</p>
+                        <a href="#" class="btn btn-small">Claim Item</a>
+                    </div>
+                </div>
+
+                <!-- Found Item 10 -->
+                <div class="item-card">
+                    <div class="item-image found-badge">
+                        <span class="badge found">Found</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Driver's License</h3>
+                        <p class="item-location">Reception Desk</p>
+                        <p class="item-date">December 5, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Found driver's license. Verify identity to claim. Contact security office.</p>
+                        <a href="#" class="btn btn-small">Claim Item</a>
+                    </div>
+                </div>
+
+                <!-- Found Item 11 -->
+                <div class="item-card">
+                    <div class="item-image found-badge">
+                        <span class="badge found">Found</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>White Sneakers</h3>
+                        <p class="item-location">Sports Field</p>
+                        <p class="item-date">November 27, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">Pair of white Nike sneakers, size 9. Found after practice.</p>
+                        <a href="#" class="btn btn-small">Claim Item</a>
+                    </div>
+                </div>
+
+                <!-- Found Item 12 -->
+                <div class="item-card">
+                    <div class="item-image found-badge">
+                        <span class="badge found">Found</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>USB Flash Drive</h3>
+                        <p class="item-location">Computer Lab</p>
+                        <p class="item-date">December 2, 2024</p>
+                        <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 10px;">32GB SanDisk USB drive. Blue colored. Describe contents to claim.</p>
+                        <a href="#" class="btn btn-small">Claim Item</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Lost & Found System. All rights reserved.</p>
+            <p>Helping reunite people with their belongings since 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
